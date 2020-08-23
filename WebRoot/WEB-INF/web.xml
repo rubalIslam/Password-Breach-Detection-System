@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <servlet>
+    <servlet-name>InstantiationServlet</servlet-name>
+    <servlet-class>com.honeywords.dbutility.InstantiationServlet</servlet-class> 
+       
+    <init-param>
+       <param-name>config</param-name>
+       <param-value>/WEB-INF/config/system.properties</param-value>
+    </init-param>    
+    <load-on-startup>0</load-on-startup>    
+  </servlet>     
+  
+	
+	<servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RegistrationServlet</servlet-name>
+    <servlet-class>com.honeywords.action.RegistrationServlet</servlet-class>    
+  </servlet>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.honeywords.action.LoginServlet</servlet-class>
+  </servlet>
+ 
+ 
+ <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Viewuserprofileservlet</servlet-name>
+    <servlet-class>com.honeywords.action.Viewuserprofileservlet</servlet-class>
+  </servlet>
+ 
+ 
+ <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ChangepasswordServlet</servlet-name>
+    <servlet-class>com.honeywords.action.ChangepasswordServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Viewadminprofileservlet</servlet-name>
+    <servlet-class>com.honeywords.action.Viewadminprofileservlet</servlet-class>
+  </servlet>  
+  
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Adminchangepasswordservlet</servlet-name>
+    <servlet-class>com.honeywords.action.Adminchangepasswordservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Viewuserrequestservlet</servlet-name>
+    <servlet-class>com.honeywords.action.Viewuserrequestservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Requestacceptservlet</servlet-name>
+    <servlet-class>com.honeywords.action.Requestacceptservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Viewalluserservlet</servlet-name>
+    <servlet-class>com.honeywords.action.Viewalluserservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Checkattackservlet</servlet-name>
+    <servlet-class>com.honeywords.action.Checkattackservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Viewoldpasswordservlet</servlet-name>
+    <servlet-class>com.honeywords.action.Viewoldpasswordservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Dosattackservlet</servlet-name>
+    <servlet-class>com.honeywords.action.Dosattackservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Bruteforceattackservlet</servlet-name>
+    <servlet-class>com.honeywords.action.Bruteforceattackservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Alarmpolicyservlet</servlet-name>
+    <servlet-class>com.honeywords.action.Alarmpolicyservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Honeywordservlet</servlet-name>
+    <servlet-class>com.honeywords.action.Honeywordservlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>InstantiationServlet</servlet-name>
+    <url-pattern>/instantiationservlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>RegistrationServlet</servlet-name>
+    <url-pattern>/RegistrationServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Viewuserprofileservlet</servlet-name>
+    <url-pattern>/Viewuserprofileservlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>ChangepasswordServlet</servlet-name>
+    <url-pattern>/ChangepasswordServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Viewadminprofileservlet</servlet-name>
+    <url-pattern>/Viewadminprofileservlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Adminchangepasswordservlet</servlet-name>
+    <url-pattern>/Adminchangepasswordservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Viewuserrequestservlet</servlet-name>
+    <url-pattern>/Viewuserrequestservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Requestacceptservlet</servlet-name>
+    <url-pattern>/Requestacceptservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Viewalluserservlet</servlet-name>
+    <url-pattern>/Viewalluserservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Checkattackservlet</servlet-name>
+    <url-pattern>/Checkattackservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Viewoldpasswordservlet</servlet-name>
+    <url-pattern>/Viewoldpasswordservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Dosattackservlet</servlet-name>
+    <url-pattern>/Dosattackservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Bruteforceattackservlet</servlet-name>
+    <url-pattern>/Bruteforceattackservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Alarmpolicyservlet</servlet-name>
+    <url-pattern>/Alarmpolicyservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Honeywordservlet</servlet-name>
+    <url-pattern>/Honeywordservlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+</web-app>
